@@ -1,0 +1,15 @@
+{
+  "name": "doujin-archive-filename-generator",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "parcel build --out-dir dist main.js"
+  },
+  "dependencies": {
+    "dayjs": "^1.9.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.4"
+  }
+}
