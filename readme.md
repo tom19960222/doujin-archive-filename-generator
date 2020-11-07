@@ -6,8 +6,11 @@ A simple tool to generate filename when making game archive.
 
 1. Clone this repo
 2. Run `yarn` to install dependencies
-3. Load extension through Chrome
-4. Open any DLSite doujin game page (currently only Japanese page supported.)
+3. Run `yarn build` to build
+4. Load extension through Chrome
+5. Open any DLsite doujin game page (currently only Japanese page supported.)
+
 Example here: [NSFW Warning!](https://www.dlsite.com/maniax/work/=/product_id/RJ162718.html)
 
 ## Screenshot
+![screenshot](https://github.com/tom19960222/doujin-archive-filename-generator/blob/master/screenshot/screenshot.png?raw=true)
