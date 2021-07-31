@@ -12,7 +12,9 @@ const extractDataFromPage = () => {
     const workId = document.URL.match(new RegExp('RJ[0-9]+.html'))[0]?.replace(/\.html/g, '') ?? '';
 
     const saleDateStr = document.querySelector('#work_outline > tbody > tr:nth-child(1) > td > a')?.textContent ?? '';
-    const saleDate = saleDateStr === '' ? dayjs(saleDateStr.replace(/(年|月|日)/g, '-'), 'YYYY-MM-DD') : dayjs();
+    const saleDate = saleDateStr !== '' ? 
+      dayjs(saleDateStr.replace(/(年|月|日)/g, '-').substr(0, 'YYYY-MM-DD'.length), 'YYYY-MM-DD') : // Remove suffix '-' 
+      dayjs();
 
     return {
         makerName,
