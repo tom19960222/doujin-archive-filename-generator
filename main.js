@@ -9,7 +9,7 @@ let mainFrame, prefixDropdown, generatedFilenameTextbox;
 const extractDataFromPage = () => {
     const makerName = document.querySelector('#work_maker > tbody > tr > td > span > a')?.textContent ?? '';
     const workName = document.querySelector('#work_name')?.textContent ?? '';
-    const workId = document.URL.match(new RegExp('RJ[0-9]+.html'))[0]?.replace(/\.html/g, '') ?? '';
+    const workId = document.URL.match(/RJ[0-9]+(?:\.html)?/)?.[0]?.replace(/\.html/g, '') ?? '';
 
     const saleDateStr = document.querySelector('#work_outline > tbody > tr:nth-child(1) > td > a')?.textContent ?? '';
     const saleDate = saleDateStr !== '' ? 
@@ -67,5 +67,5 @@ const init = () => {
     document.querySelector('#top_wrapper').appendChild(mainFrame);
 }
 
-if(document.URL.match(/maniax\/work\/=\/product_id\/RJ[0-9]+.html/))
+if(document.URL.match(/maniax\/work\/=\/product_id\/RJ[0-9]+(?:\.html)?/))
   init();
