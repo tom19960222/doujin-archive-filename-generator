@@ -10,6 +10,8 @@ A simple tool to generate filename when making game archive.
 4. Load extension through Chrome
 5. Open any DLsite doujin game page (currently only Japanese page supported.)
 
+This extension now uses Manifest V3 and requires a recent version of Chrome.
+
 Example here: [NSFW Warning!](https://www.dlsite.com/maniax/work/=/product_id/RJ162718.html)
 
 ## Screenshot
